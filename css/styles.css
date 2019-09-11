@@ -22,12 +22,6 @@
     text-transform: uppercase;
 }
 
-#page-title span {
-    display: block;
-    font-weight: 300;
-    color: #777;
-    font-size: 18px;
-}
 .dropdown-menu{
     background: #333;
 }
@@ -38,7 +32,40 @@
 
 
 #mycarousel{
-    margin: 10px 0px;
+    margin: 100px 0 0 0;
+}
+.card-deck >.card{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.likes{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
+    display: inline;
+}
+.card-right{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    margin-left: 3px;
+}
+.title-bar{
+    margin: 10px;
+}
+.title-bar .h4{
+    position: relative;
+}
+
+.title-bar a{
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 @media only screen and (max-width: 600px) {
     #mynavbar,.nav-item a {

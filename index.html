@@ -16,7 +16,7 @@
     <title>Hello, world!</title>
   </head>
   <body> 
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md navbar-fixed-top" style="background-color:whitesmoke;">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top" style="background-color:whitesmoke;">
                 <a class="navbar-brand" href="#"><img src="img/logo.png" class="d-none d-sm-block" alt="CANVAS"></a>
                 <form class="form-inline">
                     <div class="input-group">
@@ -107,33 +107,194 @@
         </section>
 
         <section id="page-title">
-            <div class="jumbotron">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-header">
-                                    Trending Searches
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <div class="list-header row"><a href="#" class="text-dark btn">Saaho</a> </div>
-                                        <div class="list-footer row"><span>MOvies</span></div>                                       
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#" class="text-dark btn">Srikanth</a>
-                                    </li>
-                                    <li class="list-group-item"><a href="#" class="text-dark btn">Nandikonda</a></li>
-                                    <li class="list-group-item"><a href="#" class="text-dark btn">IT-Chapter two</a></li>
-                                    <li class="list-group-item"><a href="#" class="text-dark btn">Dream Girl</a></li>
-                                </ul>
-                            </div>                        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-md-none d-lg-block">
+                        <h4>Trending Search</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="modal" data-target="#myModal">
+                                Saaho<span class="badge badge-primary badge-pill">Movie</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Srikanth
+                                <span class="badge badge-primary badge-pill" style="color: whitesmoke;">Movie</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Gang Leader
+                                <span class="badge badge-primary badge-pill" style="color: whitesmoke;">Movie</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Ind vs SA 2nd ODI
+                                <span class="badge badge-primary badge-pill" style="color: whitesmoke;">Sports</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Stand up Comedy
+                                <span class="badge badge-primary badge-pill" style="color: whitesmoke;">Events</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Musical Concert
+                                <span class="badge badge-primary badge-pill" style="color: whitesmoke;">Events</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="title-bar">
+                            <span class="h4">Movies</span>
+                            <a href="#">View All</a>
                         </div>
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="img/1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="likes">
+                                        <a href="#"><span class="fa fa-thumbs-up"></span></a>
+                                        <span>23.4</span>
+                                    </div>
+                                    <div class="card-right">
+                                        <h5 class="card-title" style="margin-bottom: 0px;">Gang Leader</h5>
+                                        <p class="card-text"><small class="text-muted">UA | Comedy | Telugu</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="likes">
+                                        <a href="#"><span class="fa fa-thumbs-up"></span></a>
+                                        <span>23.4</span>
+                                    </div>
+                                    <div class="card-right">
+                                        <h5 class="card-title" style="margin-bottom: 0px;">Chhichhore</h5>
+                                        <p class="card-text"><small class="text-muted">UA | Comedy | Hindi</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="likes">
+                                        <a href="#"><span class="fa fa-thumbs-up"></span></a>
+                                        <span>23.4</span>
+                                    </div>
+                                    <div class="card-right">
+                                        <h5 class="card-title" style="margin-bottom: 0px;">Saaho</h5>
+                                        <p class="card-text"><small class="text-muted">UA | Action | Telugu</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="w-100 mb-5"></div>
+        
+                        <div class="title-bar">
+                            <span class="h4">Collections</span>
+                            <a href="#">View All</a>
+                        </div>
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/5.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/6.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+        
+                    </div>
+        </div>
+        </div>
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalTItle">Book Tickets</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="enterEmail">Email address</label>
+                                <input type="email" class="form-control" id="enterEmail" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="movieName">Select movie</label>
+                                <select class="form-control" id="movieName">
+                                    <option>Saaho</option>
+                                    <option>Dream Girl</option>
+                                    <option>GangLeader</option>
+                                    <option>IT</option>
+                                    <option>Srikanth</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="noOfTickets">Select No of Tickets</label>
+                                <input type="number" class="form-control" name="noOfTickets" min="1" max='10'>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer font-small pt-4 navbar-dark bg-dark text-white">        
+            <div class="container text-center text-md-left">        
+                <div class="row">        
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">        
+                        <!-- Content -->
+                        <h5 class="text-uppercase">BookMyshow</h5>
+                        <p>BOok movie,events and sports Tickets online</p>        
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="clearfix w-100 d-md-none pb-3">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">        
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Contact Us</h5>        
+                        <ul class="list-unstyled">
+                            <li>
+                                <span class="fa fa-whatsapp"></span>
+                                <a href="#!" class="text-white text-decoration-none">Whatsapp</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-phone"></span>
+                                <a href="#!" class="text-white text-decoration-none">Call us</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-envelope-square"></span>
+                                <a href="#!" class="text-white text-decoration-none">Gmail</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-google"></span>
+                                <a href="#!" class="text-white text-decoration-none">Google</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>        
+            </div>
+            <!-- Footer Links -->
+        
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="#" class="text-white"> BookmyShow.com</a>
+            </div>
+            <!-- Copyright -->
+        
+        </footer>
+      <!-- Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
