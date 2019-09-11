@@ -1,0 +1,80 @@
+.navbar-dark .navbar-nav .nav-link:hover {
+     color:green; 
+}
+
+.nav-item a:hover{
+    color:green;
+}
+
+.navbar-brand img{
+    height: 50px;
+}
+#page-title{
+    margin: 20px 0px;
+}
+
+#page-title h1 {
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#page-title span {
+    display: block;
+    font-weight: 300;
+    color: #777;
+    font-size: 18px;
+}
+.dropdown-menu{
+    background: #333;
+}
+
+.dropdown-menu a{
+    color: aliceblue;
+}
+
+
+#mycarousel{
+    margin: 10px 0px;
+}
+@media only screen and (max-width: 600px) {
+    #mynavbar,.nav-item a {
+        text-align: center;
+    }
+    .navbar  .input-group>.form-control{
+        width: 150px;
+    }  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #mynavbar,.nav-item a {
+        text-align: center;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar  .input-group>.form-control{
+        width: 250px;
+    }  
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar  .input-group>.form-control{
+        width: 340px;
+    }  
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   .navbar  .input-group>.form-control{
+       width: 500px;
+   }
+}
+  
+
