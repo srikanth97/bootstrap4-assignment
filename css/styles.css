@@ -9,11 +9,11 @@
 .navbar-brand img{
     height: 50px;
 }
-#page-title{
+#page-content{
     margin: 20px 0px;
 }
 
-#page-title h1 {
+#page-content h1 {
     line-height: 1;
     font-weight: 600;
     letter-spacing: 1px;
@@ -31,7 +31,7 @@
 }
 
 
-#mycarousel{
+#carousel1{
     margin: 100px 0 0 0;
 }
 .card-deck >.card{
@@ -67,6 +67,10 @@
     top: 0px;
     right: 0px;
 }
+
+.cursor-pointer{
+    cursor:pointer;
+}
 @media only screen and (max-width: 600px) {
     #mynavbar,.nav-item a {
         text-align: center;
@@ -74,6 +78,18 @@
     .navbar  .input-group>.form-control{
         width: 150px;
     }  
+    /* .scrolling_wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x:auto;
+    }
+    .scrolling_wrapper .card{
+        flex:0 0 auto;
+    } */
+}
+
+@media only screen and (max-width: 600px) {
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -81,6 +97,7 @@
     #mynavbar,.nav-item a {
         text-align: center;
     }
+
 }
   
 /* Medium devices (landscape tablets, 768px and up) */
